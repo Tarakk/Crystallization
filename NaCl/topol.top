@@ -1,0 +1,10 @@
+#include "./na.itp"
+#include "./cl.itp"
+
+[ system ]
+NaCl
+
+[ molecules ]
+; name  number
+NA       108
+CL       108
