@@ -8,18 +8,6 @@ arXiv link:
 
 All input files related to this work can be found in this archive. 
 
-PLUMED dev link - 
-
-Deep-LDA - https://github.com/luigibonati/data-driven-CVs
-
-OPES - https://github.com/invemichele/opes
-
-Codes & Scripts (C++, python, google colab)
-
-   - Build Structure factor -  
-   
-   - Analysis - 
-
 
 NaCl 
 
@@ -33,3 +21,16 @@ CO2
   - GROMACS input files - co2_cry.gro, co2_liq.gro, topol.top, co2_epm2.itp, npt.mdp, topol.tpr
       
   - PLUMED input files - plumed.dat
+  
+  
+PLUMED dev link - 
+
+Deep-LDA - https://github.com/luigibonati/data-driven-CVs
+
+OPES - https://github.com/invemichele/opes
+
+Codes & Scripts (C++, python, google colab)
+
+   - Build Structure factor -  
+   
+   - Analysis - 
