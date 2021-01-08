@@ -1,0 +1,61 @@
+; 7.3.3 Run Control
+integrator              = md                    ; md integrator
+tinit                   = 0                     ; [ps] starting time for run
+dt                      = 0.002                 ; [ps] time step for integration
+nsteps                  = 50000000             ; maximum number of steps to integrate, 0.001 * 50,00,000 =5 ns 
+nstcomm                 = 1                     ; [steps] frequency of mass motion removal
+comm_grps               = system                 ; group(s) for center of mass motion removal
+comm_mode               = linear
+energygrps              = system 
+
+; output control
+nstcalcenergy           = 1
+nstfout                 = 0
+nstxout-compressed      = 500
+nstxout                 = 0  ; save coordinates every 1.0 ps
+nstvout                 = 0  ; save velocities every 1.0 ps
+nstenergy               = 500  ; save energies every 1.0 ps
+nstlog                  = 500  ; update log file every 1.0 ps
+
+
+; 7.3.9 Neighbor Searching
+nstlist                 = 10            ; [steps] freq to update neighbor list
+ns_type                 = grid          ; method of updating neighbor list
+pbc                     = xyz           ; periodic boundary conditions in all directions
+rlist                   = 0.7           ; [nm] cut-off distance for the short-range neighbor list
+
+; 7.3.10 Electrostatics
+coulombtype             = PME           ; Particle-Mesh Ewald electrostatics
+rcoulomb                = 0.7           ; [nm] distance for Coulomb cut-off
+fourierspacing          = 0.12          ; [nm] grid spacing for FFT grid when using PME
+pme_order               = 4             ; interpolation order for PME, 4 = cubic
+ewald_rtol              = 1e-5          ; relative strength of Ewald-shifted potential at rcoulomb
+
+; 7.3.11 VdW
+vdwtype                 = cut-off  ; twin-range cut-off with rlist where rvdw >= rlist
+cutoff-scheme           = Verlet
+rvdw                    = 0.7           ; [nm] distance for LJ cut-off
+DispCorr                = EnerPres ;apply long range dispersion corrections for energy
+
+
+; 7.3.14 Temperature Coupling
+tcoupl                  = V-rescale    ; temperature coupling
+tc_grps                 = system         ; groups to couple seperately to temperature bath
+tau_t                   = 0.5           ; [ps] time constant for coupling
+ref_t                   = 350           ; [K] reference temperature for coupling
+
+; 7.3.15 Pressure Coupling
+pcoupl                  = parrinello-rahman     ; berendsen     ; pressure coupling where box vectors are variable
+pcoupltype              = isotropic             ; pressure coupling in x-y-z directions
+tau_p                   = 10.0                   ; [ps] time constant for coupling
+compressibility         = 4.5e-5                ; [bar^-1] compressibility
+ref_p                   = 20000.0                   ; [bar] reference pressure for coupling
+
+constraints             = all-bonds       ; covalent h-bonds constraints
+constraint_algorithm    = LINCS         ; LINear Constraint Solver
+continuation            = no           ; apply constraints to the start configuration
+lincs_order             = 4             ; highest order in the expansion of the contraint coupling matrix
+lincs_iter              = 1             ; number of iterations to correct for rotational lengthening
+lincs_warnangle         = 30            ; [degrees] maximum angle that a bond can rotate before LINCS will complain
+
+
