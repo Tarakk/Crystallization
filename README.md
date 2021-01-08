@@ -5,17 +5,17 @@ Tarak Karmakar, Michele Invernizzi, Valerio Rizzi, and Michele Parrinello
 
 arXiv link: 
 
-All input files related to this work can be found in this archive. It contains two folders - NaCl and CO2.
+All input files related to this work can be found in this archive. 
 
-PLUMED dev link
+PLUMED dev link - 
 
-Deep-LDA
+Deep-LDA - https://github.com/luigibonati/data-driven-CVs
 
-OPES
+OPES - https://github.com/invemichele/opes
 
 Codes & Scripts (C++, python, google colab)
       Build Structure factor -  
-      Analaysis - 
+      Analysis - 
 
 NaCl 
       - GROMACS input files - nacl_cry.gro, nacl_liq.gro, topol.top, na.itp, cl.itp, npt.mdp, topol.tpr
