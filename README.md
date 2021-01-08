@@ -29,6 +29,10 @@ SF-prof
   - Build Structure factor profile
 
 
+Analysis
+
+   
+   - Google colab
   
   
 PLUMED dev link - 
@@ -37,8 +41,4 @@ Deep-LDA - https://github.com/luigibonati/data-driven-CVs
 
 OPES - https://github.com/invemichele/opes
 
-Codes & Scripts (C++, python, google colab)
 
-   - Build Structure factor -  
-   
-   - Analysis - 
