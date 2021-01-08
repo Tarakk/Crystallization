@@ -1,6 +1,7 @@
 # Crystallization
 
 "Collective Variables for the Study ofCrystallization"
+
 Tarak Karmakar, Michele Invernizzi, Valerio Rizzi, and Michele Parrinello
 
 arXiv link: 
