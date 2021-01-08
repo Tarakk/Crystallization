@@ -19,14 +19,12 @@ Codes & Scripts (C++, python, google colab)
 
 
 NaCl 
-      - GROMACS input files - nacl_cry.gro, nacl_liq.gro, topol.top, na.itp, cl.itp, npt.mdp, topol.tpr
+  - GROMACS input files - nacl_cry.gro, nacl_liq.gro, topol.top, na.itp, cl.itp, npt.mdp, topol.tpr
           
-    
-      - PLUMED input files - plumed.dat
+  - PLUMED input files - plumed.dat
 
 
 CO2
-      - GROMACS input files - co2_cry.gro, co2_liq.gro, topol.top, co2_epm2.itp, npt.mdp, topol.tpr
+  - GROMACS input files - co2_cry.gro, co2_liq.gro, topol.top, co2_epm2.itp, npt.mdp, topol.tpr
       
-      
-      - PLUMED input files - plumed.dat
+  - PLUMED input files - plumed.dat
