@@ -1,6 +1,8 @@
 # Crystallization
 
 "Collective Variables for the Study ofCrystallization"
+Tarak Karmakar, Michele Invernizzi, Valerio Rizzi, and Michele Parrinello
+
 arXiv link: 
 
 All input files related to this work can be found in this archive. It contains two folders - NaCl and CO2.
