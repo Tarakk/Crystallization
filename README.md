@@ -23,6 +23,12 @@ CO2
   - PLUMED input files - plumed.dat
   
   
+SF-prof
+
+
+  - Build Structure factor profile
+
+
   
   
 PLUMED dev link - 
