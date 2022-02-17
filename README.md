@@ -4,7 +4,7 @@
 
 Tarak Karmakar, Michele Invernizzi, Valerio Rizzi, and Michele Parrinello
 
-arXiv link: 
+See (and cite): https://doi.org/10.1080/00268976.2021.1893848 
 
 All input files related to this work can be found in this archive. 
 
